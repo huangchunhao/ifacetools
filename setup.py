@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ifacetools',
-    version="0.0.1",
+    version="0.0.3",
     description=(
         'A lib created by Vincent for Interface automation test'
     ),
@@ -22,7 +22,7 @@ setup(
     # packages=['douban'],
     packages=find_packages(),
     platforms=["all"],
-    url='https://github.com/huangchunhao/mylib',
+    url='https://github.com/huangchunhao/ifacetools',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Operating System :: OS Independent',
