@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ifacetools',
-    version="0.0.4",
+    version="0.0.5",
     description=(
         'A lib created by Vincent for Interface automation test'
     ),
