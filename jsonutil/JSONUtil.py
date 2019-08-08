@@ -23,7 +23,7 @@ class JSONUtil:
 
     def dictToJosnSting(self,dict={"a":1}):
         try:
-           j= json.dumps(p,ensure_ascii=False)
+           j= json.dumps(dict,ensure_ascii=False)
         except TypeError:
             raise TypeError("仅支持字典转换成json串")
         else:
@@ -32,12 +32,15 @@ class JSONUtil:
 
     def dictToJosnStingWithSort(self,dict={"a":1}):
         try:
-           j= json.dumps(p,sort_keys=True,ensure_ascii=False)
+           j= json.dumps(dict,sort_keys=True,ensure_ascii=False)
         except TypeError:
             raise TypeError("仅支持字典转换成json串")
         else:
             print(j)
         return j
+
+
+
 
 # j=JSONUtil()
 #
