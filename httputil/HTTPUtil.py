@@ -8,6 +8,10 @@ import requests
 
 
 class HTTPUtil:
+
+    def __init__(self):
+        pass
+
     def post_form(self,url,data=None,**kwargs):
         response = requests.post(url=url,data=data,**kwargs)
         return response

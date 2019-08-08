@@ -24,8 +24,8 @@ class RedisUtil:
         return self.redis.get(key)
 
 
-r=RedisUtil("172.20.0.54")
-c=r.getdata("lion:conteactCenter:conteactCenter_mysql_account")
-s=str(c,'utf-8')
-d=ast.literal_eval(s)
-print(d["userName"])
+# r=RedisUtil("172.20.0.54")
+# c=r.getdata("lion:conteactCenter:conteactCenter_mysql_account")
+# s=str(c,'utf-8')
+# d=ast.literal_eval(s)
+# print(d["userName"])
