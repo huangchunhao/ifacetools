@@ -4,7 +4,9 @@
 # @Email   : Vincent@163.com
 # @File    : user.py
 # @Software: PyCharm
+
+import factory
 class User():
-    def __init__(self, name, num,age, city,phone):
-        self.name, self.num,self.age, self.city,self.phone = \
-            name, num,age, city,phone
+    def __init__(self, name, num, age, school, city, phone):
+        self.name, self.num, self.age, self.school, self.city, self.phone = \
+            name, num, age, school, city, phone

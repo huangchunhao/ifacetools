@@ -7,9 +7,18 @@
 import factory
 import factory.fuzzy
 from fbtest.user import User
+from fbtest.school import School
 from fbtest.numpv import NumProvider
 
 factory.Faker.add_provider(NumProvider)
+
+class SchoolFactory(factory.Factory):
+    class Meta:
+        model = School
+
+    schoolName=factory.sequence(lambda n: 'school%04d' % n)
+
+
 
 class UserFactory(factory.Factory):
     class Meta:
@@ -20,6 +29,7 @@ class UserFactory(factory.Factory):
     age=factory.fuzzy.FuzzyInteger(42)
     city=factory.Faker("address",locale="zh_CN")
     phone=factory.fuzzy.FuzzyText("138",7,"1","1234567890")
+    school=factory.SubFactory(SchoolFactory)
 
     class Params:
         shipped=factory.Trait(

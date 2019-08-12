@@ -4,8 +4,10 @@
 # @Email   : Vincent@163.com
 # @File    : use.py
 # @Software: PyCharm
+from django.forms.models import model_to_dict
 import factory
 from fbtest.userfc import UserFactory
+from fbtest.school import School
 
 seq=[]
 uf=UserFactory()
@@ -23,3 +25,8 @@ print(list)
 
 uff=UserFactory(shipped=True)
 print(uff.__dict__)
+
+
+# uffs=UserFactory(city="1245")
+# print(model_to_dict(UserFactory(city="1245")))
+
