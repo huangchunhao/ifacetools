@@ -9,5 +9,6 @@ from .jsonutil import JSONUtil
 from .redisutil import RedisUtil
 from .time import TimeUtil
 from .randomutil import myrandom
+from .randomutil import identity
 
-__all__=["HTTPUtil","JSONUtil","RedisUtil","TimeUtil","myrandom"]
+__all__=["HTTPUtil","JSONUtil","RedisUtil","TimeUtil","myrandom","identity"]
