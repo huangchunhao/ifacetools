@@ -14,10 +14,15 @@ class HUtil:
             print(key, type(value))
             if isinstance(value, (str, int)):  # 不处理str,int的情况
                 pass
+            elif value is None:
+                pass
             elif isinstance(value, list):  # 处理list的情况
                 valuelist = []
                 for l in value:
-                    valuelist.append(self.objecttodict(l))
+                    if isinstance(l, (str, int)):
+                        valuelist.append(l)
+                    else:
+                        valuelist.append(self.objecttodict(l))
                 dict_o[key] = valuelist
             elif isinstance(value, dict):
                 pass  # 不处理dict的情况
