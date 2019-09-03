@@ -10,5 +10,6 @@ from .redisutil import RedisUtil
 from .time import TimeUtil
 from .randomutil import myrandom
 from .randomutil import identity
+from .util import hutil
 
-__all__=["HTTPUtil","JSONUtil","RedisUtil","TimeUtil","myrandom","identity"]
+__all__=["HTTPUtil","JSONUtil","RedisUtil","TimeUtil","myrandom","identity","hutil"]
